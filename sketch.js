@@ -178,10 +178,6 @@ class Boid {
     const cohesion = this.cohesion(neighbours);
     const separation = this.separation(neighbours);
 
-    alignment.mult(1);
-    cohesion.mult(1);
-    separation.mult(1);
-
     this.applyForce(alignment);
     this.applyForce(cohesion);
     this.applyForce(separation);
